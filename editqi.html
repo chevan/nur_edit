@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>ToDo-Tracker</title>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+  <body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+   			<div class="navbar-header">
+   			<a class="navbar-brand" href="#">ToDo-Tracker</a>
+   			</div>
+ 			<div>
+       			<ul class="nav navbar-nav">
+				<li><a href="website.html">Overview</a></li>
+          			<li><a href="create.html">Create</a></li>
+          			<li class="active"><a href="edit.html">Edit</a></li>
+          			<li><a href="impressum.html">Site Notice</a></li>
+       			</ul>
+      			</div>
+    		</div>
+  	</nav>
+  
+  <div class="container">
+  <h2> Edit a ToDo</h2>
+  	<div class="form-group">
+  		<label for="choose">Choose a TODO:</label>
+  		 <p><div class="dropdown">
+  			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">TODO list
+  			<span class="caret"></span></button>
+  			<ul class="dropdown-menu">
+    					<li><a href="#">Searching for data</a></li>
+    					<li><a href="#">Analysing</a></li>
+    					<li><a href="#">Cutting</a></li>
+  		</ul>
+		</div>
+		</p>
+
+		<div class="form-group">
+    			<label for="desc">Description:</label>
+      			<textarea class="form-control" rows="3" placeholder="Enter description with less than 160 words"></textarea>
+    		</div>
+    
+    		<div class="form-group">
+      			<label for="deadl">Deadline:</label>
+      			<input type="text" class="form-control" id="deadl" placeholder="Enter deadline">
+    		</div>
+    
+    		<div class="form-group">
+      			<label for="progss">Progress:</label>
+      			<input type="text" class="form-control" id="progss" placeholder="Enter progress percentage">
+		</div>
+    
+    		<button type="submit" class="btn btn-default">Save</button>
+	</div>
+  </div>
+  </body>
+</html>
